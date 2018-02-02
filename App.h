@@ -1,6 +1,5 @@
 #pragma once
 #include "Document.h"
-#include <vector>
 
 class App{
 public:
@@ -11,7 +10,9 @@ public:
 		Documents.push_back(doc);
 	}
 
+	
+
 private:
-	std::vector<Document *> Documents;
+	Document * doc;
 
 };

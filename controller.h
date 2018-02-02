@@ -1,6 +1,5 @@
 #pragma once
 
-//#include "Command.h"
 #include "App.h"
 #include <string>
 
@@ -14,7 +13,25 @@ public:
 		app->newDocument();
 	}
 
+	void openDocument(std::string name){
+		app->openDocument(name);
+	}
 
+	void saveAsDocument(std::string name){
+		app->saveAsDocument();
+	}
+
+	void drawCircle(){
+
+	}
+
+	void drawTriangle(){
+
+	}
+
+	void drawSquare(){
+
+	}
 
 private:
 	App * app;
