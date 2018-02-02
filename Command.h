@@ -2,10 +2,10 @@
 #include "Document.h"
 #include <string>
 
-class Command
+class DrawCommand
 {
 public:
-    virtual void execute() = 0;
+    virtual void execute();
     virtual ~Command() {}
 
 protected:
@@ -14,30 +14,35 @@ protected:
 };
 
 
-class DrawCircle : public Command
+class DrawCircle : public DrawCommand
 {
 public:
     DrawCircle(Document * d) : Command(d) {}
     void execute() override
     {
-        std::cout<<"DrawCircle";
+        d->DrawCircle();
     }
 };
 
-class DrawSquare : public Command
+class DrawTrianle : public DrawCommand
 {
 public:
-    DrawSquare(Document * d, const std::string &fname_) : Command(d) {}
+    DrawTrianle(Document * d) : Command(d) {}
     void execute() override
     {
-        std::cout<<"Draw Square";
+        d->DrawTrianle();
+    }
+};
+
+class DrawSquare : public DrawCommand
+{
+public:
+    DrawSquare(Document * d) : Command(d) {}
+    void execute() override
+    {
+        d->DrawSquare();
     }
 };
 
 
-/*	Document * execute(std::string name) override
-	{
-		Document *x = new Document(name);
-		return x;
-	}
-};*/
+

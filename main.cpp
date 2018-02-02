@@ -1,10 +1,13 @@
 #include <iostream>
 #include <string>
-#include "Command.h"
-#include "Document.h"
+//#include "Document.h"
+#include "Controller.h"
+#include "App.h"
 
 int main(){
-	Document x("priv");
+	App a;
+	AppController  ac(&a);
+	ac.newDocument();
 
-	return 0;
+
 }		

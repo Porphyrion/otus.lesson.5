@@ -1,12 +1,14 @@
 #pragma once
 #include <string>
+//#include <Command.h>
 
 
 class Document{
 
-	std::string name;
-
 public:
 
-	Document(std::string name_):name(name_){};	
+	Document(std::string name_):name(name_){};
+
+private:
+	std::string name;
 };
