@@ -4,7 +4,10 @@
 #include <vector>
 #include "Primitive.h"
 
-
+/*!
+	\brief Класс документа
+	
+*/
 
 class Document{
 
@@ -17,7 +20,7 @@ public:
 	};
 
 	void deletePrimitive () {
-		
+
 	};
 
 

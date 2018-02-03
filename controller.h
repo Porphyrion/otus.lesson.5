@@ -2,7 +2,11 @@
 
 #include "App.h"
 #include <string>
+/*!
+	\brief Класс контроллера
 
+	Реализация паттера контроллер
+*/
 
 class AppController{ 
 

@@ -1,7 +1,11 @@
 #pragma once
 #include "Document.h"
 #include <string>
+/*!
+	\brief Класс приложения
 
+	Класс описывает простое приложения векторного редактора
+*/
 class App{
 public:
 	App(){}
