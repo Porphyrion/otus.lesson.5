@@ -17,8 +17,14 @@ public:
     Circle(std::string name_) : Primitive(name_) {}
 };
 
-class Trianle : public Primitive
+class Triangle : public Primitive
 {
 public:
-    Circle(std::string name_) : Primitive(name_) {}
+    Triangle(std::string name_) : Primitive(name_) {}
+};
+
+class Square : public Primitive
+{
+public:
+    Square(std::string name_) : Primitive(name_) {}
 };

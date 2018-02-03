@@ -17,20 +17,20 @@ public:
 		app->openDocument(name);
 	}
 
-	void saveAsDocument(std::string name){
+	/*void saveAsDocument(std::string name){
 		app->saveAsDocument();
-	}
+	}*/
 
 	void drawCircle(){
-
+		app->drawCircle();
 	}
 
 	void drawTriangle(){
-
+		app->drawCircle();
 	}
 
 	void drawSquare(){
-
+		app->drawCircle();
 	}
 
 private:

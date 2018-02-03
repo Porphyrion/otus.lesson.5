@@ -4,5 +4,7 @@
 #include "App.h"
 
 int main(){
-	
+	AppController aC(new App());
+	aC.newDocument();
+	aC.drawCircle();
 }		
