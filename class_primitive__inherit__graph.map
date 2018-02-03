@@ -1,0 +1,5 @@
+<map id="Primitive" name="Primitive">
+<area shape="rect" id="node2" href="$class_circle.html" title="{Circle\n||+ Circle()\l}" alt="" coords="5,147,80,224"/>
+<area shape="rect" id="node3" href="$class_square.html" title="{Square\n||+ Square()\l}" alt="" coords="105,147,187,224"/>
+<area shape="rect" id="node4" href="$class_triangle.html" title="{Triangle\n||+ Triangle()\l}" alt="" coords="212,147,300,224"/>
+</map>
