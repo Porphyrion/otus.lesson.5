@@ -4,7 +4,7 @@ project(simple_editor VERSION $ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(version.h.in version.h)
 
-add_executable(print_ip main.cpp)
+add_executable(editor main.cpp)
 
 set_target_properties(editor PROPERTIES
 	CXX_STANDART 14
