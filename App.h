@@ -18,6 +18,10 @@ public:
 		Document * doc = new Document(name);
 	}
 
+	void saveAsDocument(std::string name){
+		doc->rename(name);
+	}
+
 	void drawCircle(){
 		doc->drawPrimitive(new Circle("Circle"));
 	}

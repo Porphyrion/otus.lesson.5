@@ -20,12 +20,12 @@ public:
 	};
 
 	void deletePrimitive () {
-
+		 primitives.erase()
 	};
 
 
 private:
-	std::vector<Primitive * > Primitives;
+	std::vector<Primitive * > rimitives;
 	std::string name;
 
 

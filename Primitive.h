@@ -1,5 +1,9 @@
 #pragma once
 
+
+/*!
+\brief Родительский класс простой фигуры 
+*/
 class Primitive
 {
 public:
