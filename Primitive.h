@@ -2,7 +2,7 @@
 
 
 /*!
-\brief Родительский класс простой фигуры 
+\brief Родительский класс графического примитива
 */
 class Primitive
 {
@@ -14,19 +14,27 @@ protected:
     std::string  name;
 };
 
-
+/*!
+\brief Дочерний класс круга
+*/
 class Circle : public Primitive
 {
 public:
     Circle(std::string name_) : Primitive(name_) {}
 };
 
+/*!
+\brief Дочерний класс треугольника
+*/
 class Triangle : public Primitive
 {
 public:
     Triangle(std::string name_) : Primitive(name_) {}
 };
 
+/*!
+\brief Дочерний класс круга
+*/
 class Square : public Primitive
 {
 public:

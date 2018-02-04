@@ -5,14 +5,20 @@
 #include "Primitive.h"
 
 /*!
-	\brief Класс документа
-	
+	\brief Класс документа	
 */
 
+/*!
+\file
+	Файл документа
+*/
 class Document{
 
 public:
 
+	/*!
+	Конструктор
+	*/
 	Document(std::string name_) : name(name_){};
 
 	void drawPrimitive (Primitive * somePrimitive) {
