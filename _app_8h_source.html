@@ -86,47 +86,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="_app_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_document_8h.html">Document.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_app.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_app.html">App</a>{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">   11</a></span>&#160;    <a class="code" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">App</a>(){}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_app.html#a608b891eaae995494f97f4aa46b08587">   13</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a608b891eaae995494f97f4aa46b08587">newDocument</a>(){</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_document.html">Document</a> * doc = <span class="keyword">new</span> <a class="code" href="class_document.html">Document</a>(<span class="stringliteral">&quot;Unknow Document&quot;</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_app.html#a253170848ce59512fb9c89abc59d1881">   17</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a253170848ce59512fb9c89abc59d1881">openDocument</a>(std::string name){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_document.html">Document</a> * doc = <span class="keyword">new</span> <a class="code" href="class_document.html">Document</a>(name);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_app.html#a733b65667faa377f550c40a4b2dac811">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>(){</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_circle.html">Circle</a>(<span class="stringliteral">&quot;Circle&quot;</span>));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">drawTriangle</a>(){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_triangle.html">Triangle</a>(<span class="stringliteral">&quot;Triangle&quot;</span>));</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">drawSquare</a>(){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_square.html">Square</a>(<span class="stringliteral">&quot;Square&quot;</span>));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_document.html">Document</a> * doc;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="ttc" id="class_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:14</div></div>
-<div class="ttc" id="class_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:20</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_app.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_app.html">App</a>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">   12</a></span>&#160;    <a class="code" href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">App</a>(){}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_app.html#a608b891eaae995494f97f4aa46b08587">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a608b891eaae995494f97f4aa46b08587">newDocument</a>(){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_document.html">Document</a> * doc = <span class="keyword">new</span> <a class="code" href="class_document.html">Document</a>(<span class="stringliteral">&quot;Unknow Document&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_app.html#a253170848ce59512fb9c89abc59d1881">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a253170848ce59512fb9c89abc59d1881">openDocument</a>(std::string name){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_document.html">Document</a> * doc = <span class="keyword">new</span> <a class="code" href="class_document.html">Document</a>(name);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_app.html#acff8b6c9b584b02622dc23def3a000f4">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#acff8b6c9b584b02622dc23def3a000f4">saveAsDocument</a>(std::string name){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad50fd0890f4062e0054e52ea6e39fee3">rename</a>(name);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_app.html#a733b65667faa377f550c40a4b2dac811">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_circle.html">Circle</a>(<span class="stringliteral">&quot;Circle&quot;</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">drawTriangle</a>(){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_triangle.html">Triangle</a>(<span class="stringliteral">&quot;Triangle&quot;</span>));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">drawSquare</a>(){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        doc-&gt;<a class="code" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a>(<span class="keyword">new</span> <a class="code" href="class_square.html">Square</a>(<span class="stringliteral">&quot;Square&quot;</span>));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_app.html#acd651175e5a89bbb21cb69e43b2dda35">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app.html#acd651175e5a89bbb21cb69e43b2dda35">deletePrimitive</a>(){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        doc-&gt;<a class="code" href="class_document.html#a4fd7280095a06bfa5b4e777e7d57a9a9">deletePrimitive</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_document.html">Document</a> * doc;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="ttc" id="class_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:18</div></div>
+<div class="ttc" id="class_document_html_a4fd7280095a06bfa5b4e777e7d57a9a9"><div class="ttname"><a href="class_document.html#a4fd7280095a06bfa5b4e777e7d57a9a9">Document::deletePrimitive</a></div><div class="ttdeci">void deletePrimitive()</div><div class="ttdef"><b>Definition:</b> Document.h:22</div></div>
+<div class="ttc" id="class_document_html_ad50fd0890f4062e0054e52ea6e39fee3"><div class="ttname"><a href="class_document.html#ad50fd0890f4062e0054e52ea6e39fee3">Document::rename</a></div><div class="ttdeci">void rename(std::string name_)</div><div class="ttdef"><b>Definition:</b> Document.h:28</div></div>
+<div class="ttc" id="class_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:24</div></div>
 <div class="ttc" id="class_document_html"><div class="ttname"><a href="class_document.html">Document</a></div><div class="ttdoc">Класс документа </div><div class="ttdef"><b>Definition:</b> Document.h:12</div></div>
-<div class="ttc" id="class_app_html_a608b891eaae995494f97f4aa46b08587"><div class="ttname"><a href="class_app.html#a608b891eaae995494f97f4aa46b08587">App::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> App.h:13</div></div>
-<div class="ttc" id="class_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:26</div></div>
+<div class="ttc" id="class_app_html_a608b891eaae995494f97f4aa46b08587"><div class="ttname"><a href="class_app.html#a608b891eaae995494f97f4aa46b08587">App::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> App.h:15</div></div>
+<div class="ttc" id="class_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:30</div></div>
 <div class="ttc" id="_document_8h_html"><div class="ttname"><a href="_document_8h.html">Document.h</a></div></div>
-<div class="ttc" id="class_app_html_af2729c58b92e16e0e235a5ed18d5c056"><div class="ttname"><a href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">App::drawSquare</a></div><div class="ttdeci">void drawSquare()</div><div class="ttdef"><b>Definition:</b> App.h:29</div></div>
-<div class="ttc" id="class_app_html_a253170848ce59512fb9c89abc59d1881"><div class="ttname"><a href="class_app.html#a253170848ce59512fb9c89abc59d1881">App::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:17</div></div>
+<div class="ttc" id="class_app_html_af2729c58b92e16e0e235a5ed18d5c056"><div class="ttname"><a href="class_app.html#af2729c58b92e16e0e235a5ed18d5c056">App::drawSquare</a></div><div class="ttdeci">void drawSquare()</div><div class="ttdef"><b>Definition:</b> App.h:35</div></div>
+<div class="ttc" id="class_app_html_a253170848ce59512fb9c89abc59d1881"><div class="ttname"><a href="class_app.html#a253170848ce59512fb9c89abc59d1881">App::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:19</div></div>
+<div class="ttc" id="class_app_html_acff8b6c9b584b02622dc23def3a000f4"><div class="ttname"><a href="class_app.html#acff8b6c9b584b02622dc23def3a000f4">App::saveAsDocument</a></div><div class="ttdeci">void saveAsDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:23</div></div>
 <div class="ttc" id="class_document_html_ad49ee57891135ede2c03de8fe68e220f"><div class="ttname"><a href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">Document::drawPrimitive</a></div><div class="ttdeci">void drawPrimitive(Primitive *somePrimitive)</div><div class="ttdef"><b>Definition:</b> Document.h:18</div></div>
-<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">Класс приложения </div><div class="ttdef"><b>Definition:</b> App.h:9</div></div>
-<div class="ttc" id="class_app_html_acb8cbf3e285b91d0170ffe87df5989c5"><div class="ttname"><a href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">App::App</a></div><div class="ttdeci">App()</div><div class="ttdef"><b>Definition:</b> App.h:11</div></div>
-<div class="ttc" id="class_app_html_ad791e0d3098f6c2eae2b2034232553bc"><div class="ttname"><a href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">App::drawTriangle</a></div><div class="ttdeci">void drawTriangle()</div><div class="ttdef"><b>Definition:</b> App.h:25</div></div>
-<div class="ttc" id="class_app_html_a733b65667faa377f550c40a4b2dac811"><div class="ttname"><a href="class_app.html#a733b65667faa377f550c40a4b2dac811">App::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> App.h:21</div></div>
+<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">Класс приложения </div><div class="ttdef"><b>Definition:</b> App.h:10</div></div>
+<div class="ttc" id="class_app_html_acb8cbf3e285b91d0170ffe87df5989c5"><div class="ttname"><a href="class_app.html#acb8cbf3e285b91d0170ffe87df5989c5">App::App</a></div><div class="ttdeci">App()</div><div class="ttdef"><b>Definition:</b> App.h:12</div></div>
+<div class="ttc" id="class_app_html_acd651175e5a89bbb21cb69e43b2dda35"><div class="ttname"><a href="class_app.html#acd651175e5a89bbb21cb69e43b2dda35">App::deletePrimitive</a></div><div class="ttdeci">void deletePrimitive()</div><div class="ttdef"><b>Definition:</b> App.h:39</div></div>
+<div class="ttc" id="class_app_html_ad791e0d3098f6c2eae2b2034232553bc"><div class="ttname"><a href="class_app.html#ad791e0d3098f6c2eae2b2034232553bc">App::drawTriangle</a></div><div class="ttdeci">void drawTriangle()</div><div class="ttdef"><b>Definition:</b> App.h:31</div></div>
+<div class="ttc" id="class_app_html_a733b65667faa377f550c40a4b2dac811"><div class="ttname"><a href="class_app.html#a733b65667faa377f550c40a4b2dac811">App::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> App.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

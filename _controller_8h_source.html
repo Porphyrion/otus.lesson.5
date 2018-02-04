@@ -92,45 +92,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_app_controller.html#aa2bb53fae719acaf018a163594eba472">   14</a></span>&#160;    <a class="code" href="class_app_controller.html#aa2bb53fae719acaf018a163594eba472">AppController</a>(<a class="code" href="class_app.html">App</a> *app_): app(app_){};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">newDocument</a>(){</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        app-&gt;<a class="code" href="class_app.html#a608b891eaae995494f97f4aa46b08587">newDocument</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_app_controller.html#a52daa36406214cdf329a00672b857080">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a52daa36406214cdf329a00672b857080">openDocument</a>(std::string name){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        app-&gt;<a class="code" href="class_app.html#a253170848ce59512fb9c89abc59d1881">openDocument</a>(name);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/*void saveAsDocument(std::string name){</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">        app-&gt;saveAsDocument();</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">drawCircle</a>(){</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">   32</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">drawTriangle</a>(){</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">drawSquare</a>(){</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_app.html">App</a> * app;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">newDocument</a>(){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        app-&gt;<a class="code" href="class_app.html#a608b891eaae995494f97f4aa46b08587">newDocument</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_app_controller.html#a52daa36406214cdf329a00672b857080">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a52daa36406214cdf329a00672b857080">openDocument</a>(std::string name){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        app-&gt;<a class="code" href="class_app.html#a253170848ce59512fb9c89abc59d1881">openDocument</a>(name);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_app_controller.html#a07ca67bb16201aecf6119755d4c79ebf">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a07ca67bb16201aecf6119755d4c79ebf">saveAsDocument</a>(std::string name){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        app-&gt;<a class="code" href="class_app.html#acff8b6c9b584b02622dc23def3a000f4">saveAsDocument</a>(name);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">drawCircle</a>(){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">   49</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">drawTriangle</a>(){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">drawSquare</a>(){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        app-&gt;<a class="code" href="class_app.html#a733b65667faa377f550c40a4b2dac811">drawCircle</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_app_controller.html#a591952e5aaf3404f682cb69538d914c0">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_app_controller.html#a591952e5aaf3404f682cb69538d914c0">deletePrimitive</a>(){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        app-&gt;<a class="code" href="class_app.html#acd651175e5a89bbb21cb69e43b2dda35">deletePrimitive</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_app.html">App</a> * app;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="ttc" id="class_app_controller_html"><div class="ttname"><a href="class_app_controller.html">AppController</a></div><div class="ttdoc">Класс контроллера </div><div class="ttdef"><b>Definition:</b> Controller.h:11</div></div>
-<div class="ttc" id="class_app_controller_html_a284da92cc9a65959cf97b08455c25474"><div class="ttname"><a href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">AppController::drawSquare</a></div><div class="ttdeci">void drawSquare()</div><div class="ttdef"><b>Definition:</b> Controller.h:36</div></div>
+<div class="ttc" id="class_app_controller_html_a284da92cc9a65959cf97b08455c25474"><div class="ttname"><a href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">AppController::drawSquare</a></div><div class="ttdeci">void drawSquare()</div><div class="ttdef"><b>Definition:</b> Controller.h:56</div></div>
 <div class="ttc" id="_app_8h_html"><div class="ttname"><a href="_app_8h.html">App.h</a></div></div>
 <div class="ttc" id="class_app_controller_html_aa2bb53fae719acaf018a163594eba472"><div class="ttname"><a href="class_app_controller.html#aa2bb53fae719acaf018a163594eba472">AppController::AppController</a></div><div class="ttdeci">AppController(App *app_)</div><div class="ttdef"><b>Definition:</b> Controller.h:14</div></div>
-<div class="ttc" id="class_app_html_a608b891eaae995494f97f4aa46b08587"><div class="ttname"><a href="class_app.html#a608b891eaae995494f97f4aa46b08587">App::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> App.h:13</div></div>
-<div class="ttc" id="class_app_controller_html_a52daa36406214cdf329a00672b857080"><div class="ttname"><a href="class_app_controller.html#a52daa36406214cdf329a00672b857080">AppController::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> Controller.h:20</div></div>
-<div class="ttc" id="class_app_html_a253170848ce59512fb9c89abc59d1881"><div class="ttname"><a href="class_app.html#a253170848ce59512fb9c89abc59d1881">App::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:17</div></div>
-<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">Класс приложения </div><div class="ttdef"><b>Definition:</b> App.h:9</div></div>
-<div class="ttc" id="class_app_controller_html_a552ae0f51e53f990cf08ab0369ccf7bc"><div class="ttname"><a href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">AppController::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> Controller.h:28</div></div>
-<div class="ttc" id="class_app_controller_html_a718b669467250f71abe4e912d46f1cb3"><div class="ttname"><a href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">AppController::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> Controller.h:16</div></div>
-<div class="ttc" id="class_app_controller_html_a65c00d4737dc7b8a1508f3c36544c205"><div class="ttname"><a href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">AppController::drawTriangle</a></div><div class="ttdeci">void drawTriangle()</div><div class="ttdef"><b>Definition:</b> Controller.h:32</div></div>
-<div class="ttc" id="class_app_html_a733b65667faa377f550c40a4b2dac811"><div class="ttname"><a href="class_app.html#a733b65667faa377f550c40a4b2dac811">App::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> App.h:21</div></div>
+<div class="ttc" id="class_app_html_a608b891eaae995494f97f4aa46b08587"><div class="ttname"><a href="class_app.html#a608b891eaae995494f97f4aa46b08587">App::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> App.h:15</div></div>
+<div class="ttc" id="class_app_controller_html_a52daa36406214cdf329a00672b857080"><div class="ttname"><a href="class_app_controller.html#a52daa36406214cdf329a00672b857080">AppController::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> Controller.h:27</div></div>
+<div class="ttc" id="class_app_html_a253170848ce59512fb9c89abc59d1881"><div class="ttname"><a href="class_app.html#a253170848ce59512fb9c89abc59d1881">App::openDocument</a></div><div class="ttdeci">void openDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:19</div></div>
+<div class="ttc" id="class_app_html_acff8b6c9b584b02622dc23def3a000f4"><div class="ttname"><a href="class_app.html#acff8b6c9b584b02622dc23def3a000f4">App::saveAsDocument</a></div><div class="ttdeci">void saveAsDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> App.h:23</div></div>
+<div class="ttc" id="class_app_html"><div class="ttname"><a href="class_app.html">App</a></div><div class="ttdoc">Класс приложения </div><div class="ttdef"><b>Definition:</b> App.h:10</div></div>
+<div class="ttc" id="class_app_controller_html_a591952e5aaf3404f682cb69538d914c0"><div class="ttname"><a href="class_app_controller.html#a591952e5aaf3404f682cb69538d914c0">AppController::deletePrimitive</a></div><div class="ttdeci">void deletePrimitive()</div><div class="ttdef"><b>Definition:</b> Controller.h:63</div></div>
+<div class="ttc" id="class_app_html_acd651175e5a89bbb21cb69e43b2dda35"><div class="ttname"><a href="class_app.html#acd651175e5a89bbb21cb69e43b2dda35">App::deletePrimitive</a></div><div class="ttdeci">void deletePrimitive()</div><div class="ttdef"><b>Definition:</b> App.h:39</div></div>
+<div class="ttc" id="class_app_controller_html_a552ae0f51e53f990cf08ab0369ccf7bc"><div class="ttname"><a href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">AppController::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> Controller.h:42</div></div>
+<div class="ttc" id="class_app_controller_html_a07ca67bb16201aecf6119755d4c79ebf"><div class="ttname"><a href="class_app_controller.html#a07ca67bb16201aecf6119755d4c79ebf">AppController::saveAsDocument</a></div><div class="ttdeci">void saveAsDocument(std::string name)</div><div class="ttdef"><b>Definition:</b> Controller.h:35</div></div>
+<div class="ttc" id="class_app_controller_html_a718b669467250f71abe4e912d46f1cb3"><div class="ttname"><a href="class_app_controller.html#a718b669467250f71abe4e912d46f1cb3">AppController::newDocument</a></div><div class="ttdeci">void newDocument()</div><div class="ttdef"><b>Definition:</b> Controller.h:19</div></div>
+<div class="ttc" id="class_app_controller_html_a65c00d4737dc7b8a1508f3c36544c205"><div class="ttname"><a href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">AppController::drawTriangle</a></div><div class="ttdeci">void drawTriangle()</div><div class="ttdef"><b>Definition:</b> Controller.h:49</div></div>
+<div class="ttc" id="class_app_html_a733b65667faa377f550c40a4b2dac811"><div class="ttname"><a href="class_app.html#a733b65667faa377f550c40a4b2dac811">App::drawCircle</a></div><div class="ttdeci">void drawCircle()</div><div class="ttdef"><b>Definition:</b> App.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

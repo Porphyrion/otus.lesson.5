@@ -109,16 +109,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a718b669467250f71abe4e912d46f1cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52daa36406214cdf329a00672b857080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a52daa36406214cdf329a00672b857080">openDocument</a> (std::string name)</td></tr>
 <tr class="separator:a52daa36406214cdf329a00672b857080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ca67bb16201aecf6119755d4c79ebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a07ca67bb16201aecf6119755d4c79ebf">saveAsDocument</a> (std::string name)</td></tr>
+<tr class="separator:a07ca67bb16201aecf6119755d4c79ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552ae0f51e53f990cf08ab0369ccf7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a552ae0f51e53f990cf08ab0369ccf7bc">drawCircle</a> ()</td></tr>
 <tr class="separator:a552ae0f51e53f990cf08ab0369ccf7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c00d4737dc7b8a1508f3c36544c205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a65c00d4737dc7b8a1508f3c36544c205">drawTriangle</a> ()</td></tr>
 <tr class="separator:a65c00d4737dc7b8a1508f3c36544c205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284da92cc9a65959cf97b08455c25474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a284da92cc9a65959cf97b08455c25474">drawSquare</a> ()</td></tr>
 <tr class="separator:a284da92cc9a65959cf97b08455c25474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591952e5aaf3404f682cb69538d914c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_controller.html#a591952e5aaf3404f682cb69538d914c0">deletePrimitive</a> ()</td></tr>
+<tr class="separator:a591952e5aaf3404f682cb69538d914c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Класс контроллера </p>
-<p>Реализация паттера контроллер </p>
+<p>Реализация паттера контроллер, для взаимодецствия с пользоветлем </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa2bb53fae719acaf018a163594eba472"></a>
 <div class="memitem">
@@ -145,6 +149,30 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a591952e5aaf3404f682cb69538d914c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppController::deletePrimitive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Удаляет фигуру с документа </p>
+
+</div>
+</div>
 <a class="anchor" id="a552ae0f51e53f990cf08ab0369ccf7bc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,6 +193,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Рисует круг на документе </p>
 
 </div>
 </div>
@@ -188,6 +217,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Рисует круг на документе </p>
 
 </div>
 </div>
@@ -211,6 +241,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Рисует треугольник на документе </p>
 
 </div>
 </div>
@@ -234,6 +265,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Создает новый документ </p>
 
 </div>
 </div>
@@ -258,6 +290,44 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Открывает документ </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя файла для открытия </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a07ca67bb16201aecf6119755d4c79ebf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppController::saveAsDocument </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Сохраняет документ в существующий файл </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя файла для записи </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

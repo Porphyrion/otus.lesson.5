@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['square',['Square',['../class_square.html#a75b3cae528fe52c51954bba05cc01b09',1,'Square']]]
+  ['rename',['rename',['../class_document.html#ad50fd0890f4062e0054e52ea6e39fee3',1,'Document']]]
 ];

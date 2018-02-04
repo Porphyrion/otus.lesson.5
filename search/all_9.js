@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_2eh',['version.h',['../version_8h.html',1,'']]]
+  ['triangle',['Triangle',['../class_triangle.html',1,'Triangle'],['../class_triangle.html#a4665f124950ed0df994a571991a9848b',1,'Triangle::Triangle()']]]
 ];
