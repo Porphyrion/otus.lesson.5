@@ -1,0 +1,25 @@
+language: cpp
+compiler: clang
+addons:
+  apt:
+    packages:
+      - doxygen
+      - graphviz 
+    
+script:
+- cmake .
+- cmake --build .
+- cmake --build . --target package
+- doxygen $TRAVIS_BUILD_DIR/Doxyfile
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_API_KEY # Set in travis-ci.org dashboard, marked secure
+    keep-history: true
+    local-dir: html
+    on:
+      branch: master
+
+after_success:
+  - curl -T simple_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uporphyrion:$BINTRAY_API_KEY "https://api.bintray.com/content/porphyrion/otus/otus.lesson.5/$TRAVIS_BUILD_NUMBER/simple_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"

@@ -33,7 +33,7 @@ public:
 	\param[name - имя файла для записи
 	*/
 	void saveAsDocument(std::string name){
-		app->saveAsDocument();
+		app->saveAsDocument(name);
 	}
 
 	/*!

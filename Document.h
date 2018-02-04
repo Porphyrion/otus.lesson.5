@@ -16,7 +16,7 @@ public:
 	Document(std::string name_) : name(name_){};
 
 	void drawPrimitive (Primitive * somePrimitive) {
-		Primitives.push_back(somePrimitive);
+		primitives.push_back(somePrimitive);
 	};
 
 	void deletePrimitive () {

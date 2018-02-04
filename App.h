@@ -5,10 +5,12 @@
 	\brief Класс приложения
 
 	Класс описывает простое приложения векторного редактора
+	Может создавать новый документ, открывать документ и сохранять документ в существующий файл
 */
 class App{
 public:
 	App(){}
+
 
 	void newDocument(){
 		Document * doc = new Document("Unknow Document");
@@ -33,6 +35,12 @@ public:
 	void drawSquare(){
 		doc->drawPrimitive(new Square("Square"));
 	}
+
+	void deletePrimitive(){
+		doc->deletePrimitive();
+	}
+
+
 
 private:
 	Document * doc;

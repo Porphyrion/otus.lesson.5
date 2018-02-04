@@ -14,5 +14,7 @@ int main(){
 	AppController aC(new App());
 	aC.newDocument();
 	aC.drawCircle();
+	aC.drawTriangle();
+	aC.deletePrimitive();
 
 }		
