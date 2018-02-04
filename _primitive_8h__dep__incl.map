@@ -1,6 +1,6 @@
 <map id="Primitive.h" name="Primitive.h">
-<area shape="rect" id="node2" href="$_document_8h.html" title="Document.h" alt="" coords="44,80,137,107"/>
-<area shape="rect" id="node3" href="$_app_8h.html" title="App.h" alt="" coords="63,155,117,181"/>
-<area shape="rect" id="node4" href="$_controller_8h.html" title="Controller.h" alt="" coords="5,229,93,256"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="53,304,127,331"/>
+<area shape="rect" id="node2" href="$_document_8h.html" title="Класс документа " alt="" coords="44,80,137,107"/>
+<area shape="rect" id="node3" href="$_app_8h.html" title="Класс приложения " alt="" coords="63,155,117,181"/>
+<area shape="rect" id="node4" href="$_controller_8h.html" title="Класс контроллера " alt="" coords="5,229,93,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Файл демонстрирует работу спроектированного графического редактора " alt="" coords="53,304,127,331"/>
 </map>
