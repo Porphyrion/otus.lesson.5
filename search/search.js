@@ -12,7 +12,8 @@ var indexSectionsWithContent =
   2: "admpv",
   3: "acdmnoprst~",
   4: "n",
-  5: "Ð"
+  5: "p",
+  6: "Ð"
 };
 
 var indexSectionNames =
@@ -22,7 +23,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "pages"
+  5: "defines",
+  6: "pages"
 };
 
 function convertToId(search)

@@ -13,5 +13,5 @@ var files =
       [ "Triangle", "class_triangle.html", "class_triangle" ],
       [ "Square", "class_square.html", "class_square" ]
     ] ],
-    [ "version.h", "version_8h.html", null ]
+    [ "version.h", "version_8h.html", "version_8h" ]
 ];
