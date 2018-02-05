@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['saveasdocument',['saveAsDocument',['../class_app.html#acff8b6c9b584b02622dc23def3a000f4',1,'App']]]
+  ['newdocument',['newDocument',['../class_app.html#a608b891eaae995494f97f4aa46b08587',1,'App']]]
 ];
