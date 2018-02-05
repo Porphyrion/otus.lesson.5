@@ -1,5 +1,5 @@
 <map id="Controller.h" name="Controller.h">
-<area shape="rect" id="node2" href="$_app_8h.html" title="Класс приложения " alt="" coords="55,80,109,107"/>
-<area shape="rect" id="node3" href="$_document_8h.html" title="Класс документа " alt="" coords="105,155,199,181"/>
-<area shape="rect" id="node6" href="$_primitive_8h.html" title="Primitive.h" alt="" coords="205,229,288,256"/>
+<area shape="rect" id="node2" href="$_app_8h.html" title="Класс приложения " alt="" coords="191,80,245,107"/>
+<area shape="rect" id="node3" href="$_document_8h.html" title="Класс документа " alt="" coords="139,155,232,181"/>
+<area shape="rect" id="node7" href="$_primitive_8h.html" title="Родительский класс графического примитива " alt="" coords="185,229,268,256"/>
 </map>

@@ -23,7 +23,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Graphic editor
-   &#160;<span id="projectnumber">0.0.$TRAVIS_BUILD_NUMBER</span>
    </div>
   </td>
  </tr>
@@ -88,12 +87,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_primitive-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Primitive Class Reference</div>  </div>
+<div class="title">Primitive Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Родительский класс графического примитива  
- <a href="class_primitive.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_primitive_8h_source.html">Primitive.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -101,7 +97,7 @@ Inheritance diagram for Primitive:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_primitive__inherit__graph.png" border="0" usemap="#_primitive_inherit__map" alt="Inheritance graph"/></div>
 <map name="_primitive_inherit__map" id="_primitive_inherit__map">
-<area shape="rect" id="node2" href="class_circle.html" title="Дочерний класс круга " alt="" coords="5,147,80,224"/><area shape="rect" id="node3" href="class_square.html" title="Дочерний класс круга " alt="" coords="105,147,187,224"/><area shape="rect" id="node4" href="class_triangle.html" title="Дочерний класс треугольника " alt="" coords="212,147,300,224"/></map>
+<area shape="rect" id="node2" href="class_circle.html" title="Дочерний класс круга " alt="" coords="5,161,109,253"/><area shape="rect" id="node3" href="class_square.html" title="Дочерний класс круга " alt="" coords="134,161,239,253"/><area shape="rect" id="node4" href="class_triangle.html" title="Дочерний класс треугольника " alt="" coords="263,161,368,253"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Primitive:</div>
@@ -115,6 +111,8 @@ Collaboration diagram for Primitive:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a05288f40c90569a902e845a75b314fb3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">~Primitive</a> ()</td></tr>
 <tr class="separator:a05288f40c90569a902e845a75b314fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda1c91328163da7a713059cce5ed4bb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#abda1c91328163da7a713059cce5ed4bb">sendName</a> ()=0</td></tr>
+<tr class="separator:abda1c91328163da7a713059cce5ed4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -126,9 +124,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a458c1006ec0fa0807638592239e1ff61"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a></td></tr>
 <tr class="separator:a458c1006ec0fa0807638592239e1ff61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Родительский класс графического примитива </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a05288f40c90569a902e845a75b314fb3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -173,6 +169,32 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abda1c91328163da7a713059cce5ed4bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Primitive::sendName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">Square</a>, <a class="el" href="class_triangle.html#a0877eea815be53f444c200cf30824684">Triangle</a>, and <a class="el" href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">Circle</a>.</p>
 
 </div>
 </div>

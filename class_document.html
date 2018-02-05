@@ -23,7 +23,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Graphic editor
-   &#160;<span id="projectnumber">0.0.$TRAVIS_BUILD_NUMBER</span>
    </div>
   </td>
  </tr>
@@ -103,12 +102,18 @@ Collaboration diagram for Document:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b602b02078613dc9b1be9eae93a80c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a0b602b02078613dc9b1be9eae93a80c2">Document</a> (std::string name_)</td></tr>
 <tr class="separator:a0b602b02078613dc9b1be9eae93a80c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8bcf6cc548d9b3d53d774906d3bbef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a6c8bcf6cc548d9b3d53d774906d3bbef">Document</a> (const <a class="el" href="class_document.html">Document</a> &amp;d)</td></tr>
+<tr class="separator:a6c8bcf6cc548d9b3d53d774906d3bbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e3f62307dc22baac21ddc10fa1609c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#ac2e3f62307dc22baac21ddc10fa1609c">~Document</a> ()</td></tr>
+<tr class="separator:ac2e3f62307dc22baac21ddc10fa1609c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49ee57891135ede2c03de8fe68e220f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#ad49ee57891135ede2c03de8fe68e220f">drawPrimitive</a> (<a class="el" href="class_primitive.html">Primitive</a> *somePrimitive)</td></tr>
 <tr class="separator:ad49ee57891135ede2c03de8fe68e220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fd7280095a06bfa5b4e777e7d57a9a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a4fd7280095a06bfa5b4e777e7d57a9a9">deletePrimitive</a> ()</td></tr>
 <tr class="separator:a4fd7280095a06bfa5b4e777e7d57a9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50fd0890f4062e0054e52ea6e39fee3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#ad50fd0890f4062e0054e52ea6e39fee3">rename</a> (std::string name_)</td></tr>
 <tr class="separator:ad50fd0890f4062e0054e52ea6e39fee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcc0306f01b99b2c1ec2f89eae81640"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_document.html#a8fcc0306f01b99b2c1ec2f89eae81640">sendName</a> () const </td></tr>
+<tr class="separator:a8fcc0306f01b99b2c1ec2f89eae81640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0b602b02078613dc9b1be9eae93a80c2"></a>
@@ -133,6 +138,53 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Конструктор </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c8bcf6cc548d9b3d53d774906d3bbef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Document::Document </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_document.html">Document</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2e3f62307dc22baac21ddc10fa1609c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Document::~Document </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -199,6 +251,29 @@ Public Member Functions</h2></td></tr>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>name_</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fcc0306f01b99b2c1ec2f89eae81640"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Document::sendName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
