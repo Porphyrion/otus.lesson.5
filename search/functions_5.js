@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opendocument',['openDocument',['../class_app.html#a253170848ce59512fb9c89abc59d1881',1,'App']]]
+  ['_7eapp',['~App',['../class_app.html#a34f1f253b1cef5f4ecbac66eaf6964ec',1,'App']]]
 ];

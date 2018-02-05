@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triangle',['Triangle',['../class_triangle.html',1,'Triangle'],['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()']]]
+  ['_7eapp',['~App',['../class_app.html#a34f1f253b1cef5f4ecbac66eaf6964ec',1,'App']]]
 ];
