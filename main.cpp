@@ -9,7 +9,7 @@
 \file
 \brief 
 
-Файл демонстрирует работу спроектированного графического редактора
+В файле код демонстрирующий работу спроектированного графического редактора
 */
 #include <iostream>
 #include <string>
@@ -17,10 +17,12 @@
 #include "App.h"
 
 int main(){
-	AppController aC(new App());
-	aC.newDocument();
-	aC.drawCircle();
-	aC.drawTriangle();
-	aC.deletePrimitive();
+
+	AppController ac(new App());
+	ac.newDocument();
+	ac.drawCircle();
+	ac.drawTriangle();
+	ac.drawTriangle();
+	ac.deletePrimitive();
 
 }		

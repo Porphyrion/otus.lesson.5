@@ -1,17 +1,18 @@
 #pragma once
 #include "Document.h"
 #include <string>
+#include <vector>
 /*!
 	\brief Класс приложения
 
 	Класс описывает простое приложения векторного редактора
-	Может создавать новый документ, открывать документ и сохранять документ в существующий файл
+	Может создавать новый документ, открывать документ, сохранять документ в существующий файл, добавлять или удалять графические примитивы.
 */
 
 /*!
 \file
 \brief 
-	Файл приложения
+	Заголовочный файл приложения
 */
 class App{
 public:
@@ -20,7 +21,6 @@ public:
 	Конструктор
 	*/
 	App(){}
-
 	/*!
 	Деструтор
 	*/
@@ -33,14 +33,16 @@ public:
 	Создает новый документ
 	*/
 	void newDocument(){
-		Document * doc = new Document("Unknow Document");
+		std::cout<<"Create new document"<<std::endl;
+		doc = new Document("Unknow Document");
 	}
 	
 	/*!
 	Открывает документ из файла
 	*/
 	void openDocument(std::string name){
-		Document * doc = new Document(name);
+		std::cout<<"Open "<<name<<" document"<<std::endl;
+		doc = new Document(name);
 	}
 	
 	/*!
@@ -54,21 +56,21 @@ public:
 	Рисует круг на документе
 	*/
 	void drawCircle(){
-		doc->drawPrimitive(new Circle("Circle"));
+		doc->drawPrimitive(new Circle());
 	}
 
 	/*!
 	Рисует треугольник на документе
 	*/
 	void drawTriangle(){
-		doc->drawPrimitive(new Triangle("Triangle"));
+		doc->drawPrimitive(new Triangle());
 	}
 
 	/*!
 	Рисует квадрат на документе
 	*/
 	void drawSquare(){
-		doc->drawPrimitive(new Square("Square"));
+		doc->drawPrimitive(new Square());
 	}
 
 	/*!
@@ -81,5 +83,7 @@ public:
 
 private:
 	Document * doc;
+	std::vector<int> ints;
+
 
 };

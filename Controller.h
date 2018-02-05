@@ -11,7 +11,7 @@
 /*!
 \file
 \brief 
-	Файл контроллера
+	Заголовочный файл контроллера
 */
 class AppController{ 
 
@@ -56,14 +56,15 @@ public:
 	Рисует треугольник на документе
 	*/
 	void drawTriangle(){
-		app->drawCircle();
+		app->drawTriangle();
 	}
 
 	/*!
 	Рисует круг на документе
 	*/
 	void drawSquare(){
-		app->drawCircle();
+		std::cout<<"cont"<<std::endl;
+		app->drawSquare();
 	}
 
 	/*!

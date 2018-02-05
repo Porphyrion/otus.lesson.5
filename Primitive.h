@@ -4,10 +4,17 @@
 /*!
 \brief Родительский класс графического примитива
 */
+
+/*!
+\file
+\brief Заголовочный файл с описанием графический примитивов
+
+*/
 class Primitive
 {
 public:
     virtual ~Primitive() {}
+    virtual std::string sendName() = 0;
 
 protected:
     Primitive(std::string name_):name(name_){}
@@ -20,7 +27,12 @@ protected:
 class Circle : public Primitive
 {
 public:
-    Circle(std::string name_) : Primitive(name_) {}
+    Circle() : Primitive("Circle") {}
+
+    std::string sendName() override 
+    {
+    	return this->name;
+    }
 };
 
 /*!
@@ -29,7 +41,12 @@ public:
 class Triangle : public Primitive
 {
 public:
-    Triangle(std::string name_) : Primitive(name_) {}
+    Triangle() : Primitive("Triangle") {}
+
+    std::string sendName() override 
+    {
+    	return this->name;
+    }
 };
 
 /*!
@@ -38,5 +55,10 @@ public:
 class Square : public Primitive
 {
 public:
-    Square(std::string name_) : Primitive(name_) {}
+    Square() : Primitive("Square") {}
+    
+    std::string sendName() override 
+    {
+    	return this->name;
+    }
 };
