@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(simple_editor VERSION $ENV{TRAVIS_BUILD_NUMBER})
+project(Graphic_editor VERSION $ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(version.h.in version.h)
 

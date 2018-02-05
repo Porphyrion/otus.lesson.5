@@ -21,10 +21,17 @@ public:
 	*/
 	Document(std::string name_) : name(name_){};
 
+	/*!
+	Добавление графического примитива на документ
+	*/	
 	void drawPrimitive (Primitive * somePrimitive) {
 		primitives.push_back(somePrimitive);
 	};
 
+
+	/*!
+	Удаление графического примитива на документ
+	*/
 	void deletePrimitive () {
 		if(!primitives.empty()){
 			primitives.pop_back();
