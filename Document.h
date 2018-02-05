@@ -36,7 +36,7 @@ public:
 	*/
 	void deletePrimitive () {
 		if(!primitives.empty()){
-			std::cout<<"deletePrimitive"<<std::endl;
+			std::cout<<"Delete Primitive"<<std::endl;
 			primitives.pop_back();
 		}
 	};

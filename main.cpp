@@ -18,11 +18,9 @@
 
 int main(){
 
-	AppController ac(new App());
-	ac.newDocument();
-	ac.drawCircle();
-	ac.drawTriangle();
-	ac.drawTriangle();
-	ac.deletePrimitive();
+	App editor;
+	editor.newDocument();
+	editor.drawCircle();
+	editor.deletePrimitive();
 
 }		
