@@ -106,63 +106,63 @@ $(document).ready(function(){initNavTree('_primitive_8h_source.html','');});
 <div class="contents">
 <a href="_primitive_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_primitive.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_primitive.html">Primitive</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">   14</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">~Primitive</a>() {}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="class_primitive.html#abda1c91328163da7a713059cce5ed4bb">sendName</a>() = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">   18</a></span>&#160;    <a class="code" href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">Primitive</a>(std::string name_):<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>(name_){}</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">   19</a></span>&#160;    std::string  <a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_circle.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_circle.html">Circle</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">   28</a></span>&#160;    <a class="code" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Circle&quot;</span>) {}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">   30</a></span>&#160;    std::string <a class="code" href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">sendName</a>()<span class="keyword"> override </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_triangle.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_triangle.html">Triangle</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">   42</a></span>&#160;    <a class="code" href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">Triangle</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Triangle&quot;</span>) {}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_triangle.html#a0877eea815be53f444c200cf30824684">   44</a></span>&#160;    std::string <a class="code" href="class_triangle.html#a0877eea815be53f444c200cf30824684">sendName</a>()<span class="keyword"> override </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_square.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_square.html">Square</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">   56</a></span>&#160;    <a class="code" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Square&quot;</span>) {}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">   58</a></span>&#160;    std::string <a class="code" href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">sendName</a>()<span class="keyword"> override </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="ttc" id="class_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdoc">Дочерний класс круга </div><div class="ttdef"><b>Definition:</b> Primitive.h:25</div></div>
-<div class="ttc" id="class_circle_html_a996d40cd4bc39efbcc611795862dca04"><div class="ttname"><a href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">Circle::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:30</div></div>
-<div class="ttc" id="class_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdoc">Дочерний класс треугольника </div><div class="ttdef"><b>Definition:</b> Primitive.h:39</div></div>
-<div class="ttc" id="class_square_html_a3dc7ff9aefc2725172b5d3153973d243"><div class="ttname"><a href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square::Square</a></div><div class="ttdeci">Square()</div><div class="ttdef"><b>Definition:</b> Primitive.h:56</div></div>
-<div class="ttc" id="class_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdoc">Дочерний класс круга </div><div class="ttdef"><b>Definition:</b> Primitive.h:53</div></div>
-<div class="ttc" id="class_primitive_html_a458c1006ec0fa0807638592239e1ff61"><div class="ttname"><a href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">Primitive::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> Primitive.h:19</div></div>
-<div class="ttc" id="class_circle_html_ad1ecfcfc7bf34529c6a6d6c448bf70fe"><div class="ttname"><a href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle::Circle</a></div><div class="ttdeci">Circle()</div><div class="ttdef"><b>Definition:</b> Primitive.h:28</div></div>
-<div class="ttc" id="class_triangle_html_a0877eea815be53f444c200cf30824684"><div class="ttname"><a href="class_triangle.html#a0877eea815be53f444c200cf30824684">Triangle::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:44</div></div>
-<div class="ttc" id="class_primitive_html_a05288f40c90569a902e845a75b314fb3"><div class="ttname"><a href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">Primitive::~Primitive</a></div><div class="ttdeci">virtual ~Primitive()</div><div class="ttdef"><b>Definition:</b> Primitive.h:14</div></div>
-<div class="ttc" id="class_primitive_html"><div class="ttname"><a href="class_primitive.html">Primitive</a></div><div class="ttdoc">Родительский класс графического примитива </div><div class="ttdef"><b>Definition:</b> Primitive.h:11</div></div>
-<div class="ttc" id="class_triangle_html_aaefe4ed500c07918d30c6f0e286332c5"><div class="ttname"><a href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">Triangle::Triangle</a></div><div class="ttdeci">Triangle()</div><div class="ttdef"><b>Definition:</b> Primitive.h:42</div></div>
-<div class="ttc" id="class_square_html_a3c5da0244f1dd547d42eceee883728e7"><div class="ttname"><a href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">Square::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:58</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_primitive.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_primitive.html">Primitive</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">   11</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">~Primitive</a>() {}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="class_primitive.html#abda1c91328163da7a713059cce5ed4bb">sendName</a>() = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">   15</a></span>&#160;    <a class="code" href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">Primitive</a>(std::string name_):<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>(name_){}</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">   16</a></span>&#160;    std::string  <a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_circle.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_circle.html">Circle</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">   25</a></span>&#160;    <a class="code" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Circle&quot;</span>) {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">   27</a></span>&#160;    std::string <a class="code" href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">sendName</a>()<span class="keyword"> override </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_triangle.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_triangle.html">Triangle</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">   39</a></span>&#160;    <a class="code" href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">Triangle</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Triangle&quot;</span>) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_triangle.html#a0877eea815be53f444c200cf30824684">   41</a></span>&#160;    std::string <a class="code" href="class_triangle.html#a0877eea815be53f444c200cf30824684">sendName</a>()<span class="keyword"> override </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_square.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_square.html">Square</a> : <span class="keyword">public</span> <a class="code" href="class_primitive.html">Primitive</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">   53</a></span>&#160;    <a class="code" href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square</a>() : <a class="code" href="class_primitive.html">Primitive</a>(<span class="stringliteral">&quot;Square&quot;</span>) {}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">   55</a></span>&#160;    std::string <a class="code" href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">sendName</a>()<span class="keyword"> override </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">name</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="ttc" id="class_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdoc">Дочерний класс круга </div><div class="ttdef"><b>Definition:</b> Primitive.h:22</div></div>
+<div class="ttc" id="class_circle_html_a996d40cd4bc39efbcc611795862dca04"><div class="ttname"><a href="class_circle.html#a996d40cd4bc39efbcc611795862dca04">Circle::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:27</div></div>
+<div class="ttc" id="class_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdoc">Дочерний класс треугольника </div><div class="ttdef"><b>Definition:</b> Primitive.h:36</div></div>
+<div class="ttc" id="class_square_html_a3dc7ff9aefc2725172b5d3153973d243"><div class="ttname"><a href="class_square.html#a3dc7ff9aefc2725172b5d3153973d243">Square::Square</a></div><div class="ttdeci">Square()</div><div class="ttdef"><b>Definition:</b> Primitive.h:53</div></div>
+<div class="ttc" id="class_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdoc">Дочерний класс круга </div><div class="ttdef"><b>Definition:</b> Primitive.h:50</div></div>
+<div class="ttc" id="class_primitive_html_a458c1006ec0fa0807638592239e1ff61"><div class="ttname"><a href="class_primitive.html#a458c1006ec0fa0807638592239e1ff61">Primitive::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> Primitive.h:16</div></div>
+<div class="ttc" id="class_circle_html_ad1ecfcfc7bf34529c6a6d6c448bf70fe"><div class="ttname"><a href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle::Circle</a></div><div class="ttdeci">Circle()</div><div class="ttdef"><b>Definition:</b> Primitive.h:25</div></div>
+<div class="ttc" id="class_triangle_html_a0877eea815be53f444c200cf30824684"><div class="ttname"><a href="class_triangle.html#a0877eea815be53f444c200cf30824684">Triangle::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:41</div></div>
+<div class="ttc" id="class_primitive_html_a05288f40c90569a902e845a75b314fb3"><div class="ttname"><a href="class_primitive.html#a05288f40c90569a902e845a75b314fb3">Primitive::~Primitive</a></div><div class="ttdeci">virtual ~Primitive()</div><div class="ttdef"><b>Definition:</b> Primitive.h:11</div></div>
+<div class="ttc" id="class_primitive_html"><div class="ttname"><a href="class_primitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> Primitive.h:8</div></div>
+<div class="ttc" id="class_triangle_html_aaefe4ed500c07918d30c6f0e286332c5"><div class="ttname"><a href="class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5">Triangle::Triangle</a></div><div class="ttdeci">Triangle()</div><div class="ttdef"><b>Definition:</b> Primitive.h:39</div></div>
+<div class="ttc" id="class_square_html_a3c5da0244f1dd547d42eceee883728e7"><div class="ttname"><a href="class_square.html#a3c5da0244f1dd547d42eceee883728e7">Square::sendName</a></div><div class="ttdeci">std::string sendName() override</div><div class="ttdef"><b>Definition:</b> Primitive.h:55</div></div>
 <div class="ttc" id="class_primitive_html_abda1c91328163da7a713059cce5ed4bb"><div class="ttname"><a href="class_primitive.html#abda1c91328163da7a713059cce5ed4bb">Primitive::sendName</a></div><div class="ttdeci">virtual std::string sendName()=0</div></div>
-<div class="ttc" id="class_primitive_html_a870df27f1fc502c76ada39d0075354d5"><div class="ttname"><a href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">Primitive::Primitive</a></div><div class="ttdeci">Primitive(std::string name_)</div><div class="ttdef"><b>Definition:</b> Primitive.h:18</div></div>
+<div class="ttc" id="class_primitive_html_a870df27f1fc502c76ada39d0075354d5"><div class="ttname"><a href="class_primitive.html#a870df27f1fc502c76ada39d0075354d5">Primitive::Primitive</a></div><div class="ttdeci">Primitive(std::string name_)</div><div class="ttdef"><b>Definition:</b> Primitive.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
