@@ -25,6 +25,3 @@ deploy:
   script:
   - curl -T Graphic_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uporphyrion:$BINTRAY_API_KEY "https://api.bintray.com/content/porphyrion/otus/otus.lesson.5/$TRAVIS_BUILD_NUMBER/Graphic_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
     
-
-# after_success:
-#   - curl -T Graphic_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uporphyrion:$BINTRAY_API_KEY "https://api.bintray.com/content/porphyrion/otus/otus.lesson.5/$TRAVIS_BUILD_NUMBER/Graphic_editor-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
