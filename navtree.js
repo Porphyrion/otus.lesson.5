@@ -2,7 +2,7 @@ var NAVTREE =
 [
   [ "Графический редактор", "index.html", [
     [ "Проектирование простого графического редактора", "index.html", null ],
-    [ "Задание 5", "md__r_e_a_d_m_e.html", null ],
+    [ "README", "md__r_e_a_d_m_e.html", null ],
     [ "Классы", null, [
       [ "Классы", "annotated.html", "annotated" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
